@@ -1,0 +1,216 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "FileDescription", "JQConfigTool ObjectARX application"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "JQConfigTool"
+            VALUE "LegalCopyright", "Copyright ?2002"
+            VALUE "OriginalFilename", "JQConfigTool.arx"
+            VALUE "ProductName", "JQConfigTool Application"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_BASEGRIDEDITOR DIALOGEX 0, 0, 343, 209
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "表格编辑模板"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,224,187,50,14
+    PUSHBUTTON      "取消",IDCANCEL,283,187,50,14
+    CONTROL         "Custom1",IDC_GRID_GRIDEDITOR,"MFCGridCtrl",WS_TABSTOP,7,7,329,173
+    PUSHBUTTON      "帮助",IDC_BUTTON_USERMANUAL,9,187,50,14
+END
+
+IDD_DIALOG_MULTIMODIFYMTEXT DIALOGEX 0, 0, 291, 245
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "批量修改多行文字"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "筛选条件",IDC_STATIC,7,14,277,108
+    CONTROL         "在指定图层",IDC_CHECK_SRCLAYER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,22,47,52,10
+    COMBOBOX        IDC_COMBO_SRCLAYER,79,45,86,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "文字样式为",IDC_CHECK_SRCTEXTSTYLE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,22,65,55,10
+    COMBOBOX        IDC_COMBO_SRCTEXTSTYLE,79,62,86,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "扩展数据满足正则",IDC_CHECK_SRCXDATA,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,22,84,80,10
+    EDITTEXT        IDC_EDIT_SRCXDATA,104,81,86,14,ES_AUTOHSCROLL
+    CONTROL         "文本内容满足正则",IDC_CHECK_SRCCONTENT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,22,102,79,10
+    EDITTEXT        IDC_EDIT_SRCCONTENT,104,100,86,14,ES_AUTOHSCROLL
+    GROUPBOX        "批量操作",IDC_STATIC,7,131,277,85
+    CONTROL         "移动到图层",IDC_CHECK_DESTLAYER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,22,145,55,10
+    COMBOBOX        IDC_COMBO_DESTLAYER,79,144,80,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "更改文字样式表",IDC_CHECK_DESTTEXTSTYLE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,22,163,70,10
+    COMBOBOX        IDC_COMBO_DESTTEXTSTYLE,99,161,88,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "设置新文本",IDC_CHECK_DESTCONTENT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,22,180,56,10
+    EDITTEXT        IDC_EDIT_DESTCONTENT,82,178,81,14,ES_AUTOHSCROLL
+    CONTROL         "清除多行文字中的格式控制字符（格式刷）",IDC_CHECK_DESTCLEARFORMAT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,22,198,241,10
+    DEFPUSHBUTTON   "预览",IDOK,161,222,50,14
+    PUSHBUTTON      "关闭",IDCANCEL,221,222,50,14
+    CONTROL         "在块记录",IDC_CHECK_SRCBLOCK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,22,29,45,10
+    COMBOBOX        IDC_COMBO_SRCBLOCK,71,27,86,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "帮助",IDC_BUTTON_USERMANUAL,14,222,48,14
+END
+
+IDD_DIALOG_SEARCHSIGNBOX DIALOGEX 0, 0, 287, 190
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "查找签名位置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "关闭",IDOK,223,169,50,14
+    LTEXT           "签名字段：",IDC_STATIC,27,20,46,12
+    EDITTEXT        IDC_EDIT_SIGNBOXTITLE,77,17,81,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "开始查找",IDC_BUTTON_STARTSEARCH,170,17,49,15
+    CONTROL         "",IDC_LIST_SIGNBOXINFOS,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,15,66,258,96
+    LTEXT           "查找结果",IDC_STATIC,15,52,52,8
+    LTEXT           "(注：AutoCAD 2007以上版本可使用正则匹配)",IDC_STATIC,27,36,180,8
+    PUSHBUTTON      "帮助",IDC_BUTTON_HELP,14,169,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DIALOG_BASEGRIDEDITOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 336
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 201
+    END
+
+    IDD_DIALOG_MULTIMODIFYMTEXT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 284
+        VERTGUIDE, 22
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 236
+    END
+
+    IDD_DIALOG_SEARCHSIGNBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 280
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 183
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_DIALOG_BASEGRIDEDITOR AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_MULTIMODIFYMTEXT AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_SEARCHSIGNBOX AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_PROJNAME            "JQConfigTool"
+END
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+

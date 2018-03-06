@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>JQConfigTool</ProjectName>
+    <ProjectGuid>{34F14D0F-CDEC-42F6-B663-3B346F28032C}</ProjectGuid>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v90</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <UseOfAtl>false</UseOfAtl>
+    <CharacterSet>Unicode</CharacterSet>
+    <CLRSupport>false</CLRSupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <UseOfAtl>false</UseOfAtl>
+    <CharacterSet>Unicode</CharacterSet>
+    <CLRSupport>false</CLRSupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v90</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <UseOfAtl>false</UseOfAtl>
+    <CharacterSet>Unicode</CharacterSet>
+    <CLRSupport>false</CLRSupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <UseOfAtl>false</UseOfAtl>
+    <CharacterSet>Unicode</CharacterSet>
+    <CLRSupport>false</CLRSupport>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>15.0.26419.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\Debug\sys18\</OutDir>
+    <IntDir>..\TMP\Debug\sys18\JQConfigTool\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>C:\Program Files (x86)\金曲配置工具\sys18x64\</OutDir>
+    <IntDir>..\TMP\Debug\sys18x64\JQConfigTool\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\Bin\打包文件\sys18\</OutDir>
+    <IntDir>..\tmp\Release\sys18\JQConfigTool\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>E:\code\arx\ObjectARX 2010\inc;E:\code\arx\ObjectARX 2010\inc-win32;$(IncludePath)</IncludePath>
+    <LibraryPath>E:\code\arx\ObjectARX 2010\lib-win32;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>..\Bin\打包文件\sys18x64\</OutDir>
+    <IntDir>..\TMP\Release\sys18x64\JQConfigTool\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>E:\code\arx\ObjectARX 2010\inc;E:\code\arx\ObjectARX 2010\inc-x64;$(IncludePath)</IncludePath>
+    <LibraryPath>E:\code\arx\ObjectARX 2010\lib-x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>sdk/boost_1_58/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalUsingDirectories>c:\Program Files\AutoCAD;%(AdditionalUsingDirectories)</AdditionalUsingDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;JQCONFIGTOOL_MODULE;_AFXEXT;_ACRXAPP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>false</StringPooling>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level1</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libboost_regex-vc90-mt-1_58.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)JQConfigTool.arx</OutputFile>
+      <AdditionalLibraryDirectories>sdk/boost_1_58/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <LinkDLL>true</LinkDLL>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)JQConfigTool.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>../Lib/Debug/libVC9/JQConfigTool.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>sdk/boost_1_58/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalUsingDirectories>c:\Program Files\AutoCAD;%(AdditionalUsingDirectories)</AdditionalUsingDirectories>
+      <PreprocessorDefinitions>_WIN64;_WINDOWS;JQCONFIGTOOL_MODULE;_AFXEXT;_ACRXAPP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>false</StringPooling>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level1</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libboost_regex-vc90-mt-1_58.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)JQConfigTool.arx</OutputFile>
+      <AdditionalLibraryDirectories>sdk/boost_1_58/lib64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <LinkDLL>true</LinkDLL>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)JQConfigTool.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>../Lib/Debug/libVC9x64/JQConfigTool.lib</ImportLibrary>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories>sdk/boost_1_58/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalUsingDirectories>c:\Program Files\AutoCAD;%(AdditionalUsingDirectories)</AdditionalUsingDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;JQCONFIGTOOL_MODULE;NDEBUG;_AFXEXT;_ACRXAPP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level1</WarningLevel>
+      <DebugInformationFormat />
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libboost_regex-vc90-mt-1_58.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)JQConfigTool.arx</OutputFile>
+      <AdditionalLibraryDirectories>sdk/boost_1_58/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <LinkDLL>true</LinkDLL>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ProgramDatabaseFile />
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>../Lib/Release/libVC9/JQConfigTool.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories>sdk/boost_1_58/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalUsingDirectories>c:\Program Files\AutoCAD;%(AdditionalUsingDirectories)</AdditionalUsingDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;JQCONFIGTOOL_MODULE;NDEBUG;_AFXEXT;_ACRXAPP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level1</WarningLevel>
+      <DebugInformationFormat />
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libboost_regex-vc90-mt-1_58.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)JQConfigTool.arx</OutputFile>
+      <AdditionalLibraryDirectories>sdk/boost_1_58/lib64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <LinkDLL>true</LinkDLL>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ProgramDatabaseFile />
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>../Lib/Release/libVC9x64/JQConfigTool.lib</ImportLibrary>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="acrxEntryPoint.cpp" />
+    <ClCompile Include="AddCatalogBodyAttrs.cpp" />
+    <ClCompile Include="AddRoleSignBox.cpp" />
+    <ClCompile Include="ArchiveAllFonts.cpp" />
+    <ClCompile Include="BaseGridEditor.cpp" />
+    <ClCompile Include="DocData.cpp" />
+    <ClCompile Include="EditConfigToolSettings.cpp" />
+    <ClCompile Include="JQConfigTool.cpp" />
+    <ClCompile Include="MultiRenameSymbolRecord.cpp" />
+    <ClCompile Include="MultiSearchAndEditMText.cpp" />
+    <ClCompile Include="MultiTransTextToMText.cpp" />
+    <ClCompile Include="sdk\GoldTools\GAttrMgr.cpp" />
+    <ClCompile Include="sdk\GoldTools\GCharSet.cpp" />
+    <ClCompile Include="sdk\GoldTools\GGeometry.cpp" />
+    <ClCompile Include="sdk\GoldTools\GLayer.cpp" />
+    <ClCompile Include="sdk\GoldTools\GPath.cpp" />
+    <ClCompile Include="sdk\GridCtrl\GridCell.cpp" />
+    <ClCompile Include="sdk\GridCtrl\GridCellBase.cpp" />
+    <ClCompile Include="sdk\GridCtrl\GridCellButton.cpp" />
+    <ClCompile Include="sdk\GridCtrl\GridCellCheck.cpp" />
+    <ClCompile Include="sdk\GridCtrl\GridCellCombo.cpp" />
+    <ClCompile Include="sdk\GridCtrl\GridCellDateTime.cpp" />
+    <ClCompile Include="sdk\GridCtrl\GridCellNumeric.cpp" />
+    <ClCompile Include="sdk\GridCtrl\GridCtrl.cpp" />
+    <ClCompile Include="sdk\GridCtrl\GridDropTarget.cpp" />
+    <ClCompile Include="sdk\GridCtrl\InPlaceEdit.cpp" />
+    <ClCompile Include="sdk\GridCtrl\TitleTip.cpp" />
+    <ClCompile Include="SearchSignBox.cpp" />
+    <ClCompile Include="SetMTextXdataEditor.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AddCatalogBodyAttrs.h" />
+    <ClInclude Include="AddRoleSignBox.h" />
+    <ClInclude Include="ArchiveAllFonts.h" />
+    <ClInclude Include="BaseGridEditor.h" />
+    <ClInclude Include="DocData.h" />
+    <ClInclude Include="EditConfigToolSettings.h" />
+    <ClInclude Include="MultiRenameSymbolRecord.h" />
+    <ClInclude Include="MultiSearchAndEditMText.h" />
+    <ClInclude Include="MultiTransTextToMText.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="sdk\GoldTools\GAttrMgr.h" />
+    <ClInclude Include="sdk\GoldTools\GCharSet.h" />
+    <ClInclude Include="sdk\GoldTools\GGeometry.h" />
+    <ClInclude Include="sdk\GoldTools\GLayer.h" />
+    <ClInclude Include="sdk\GoldTools\GLockDocument.h" />
+    <ClInclude Include="sdk\GoldTools\GPath.h" />
+    <ClInclude Include="sdk\GridCtrl\CellRange.h" />
+    <ClInclude Include="sdk\GridCtrl\GridCell.h" />
+    <ClInclude Include="sdk\GridCtrl\GridCellBase.h" />
+    <ClInclude Include="sdk\GridCtrl\GridCellButton.h" />
+    <ClInclude Include="sdk\GridCtrl\GridCellCheck.h" />
+    <ClInclude Include="sdk\GridCtrl\GridCellCombo.h" />
+    <ClInclude Include="sdk\GridCtrl\GridCellDateTime.h" />
+    <ClInclude Include="sdk\GridCtrl\GridCellNumeric.h" />
+    <ClInclude Include="sdk\GridCtrl\GridCtrl.h" />
+    <ClInclude Include="sdk\GridCtrl\GridDropTarget.h" />
+    <ClInclude Include="sdk\GridCtrl\InPlaceEdit.h" />
+    <ClInclude Include="sdk\GridCtrl\MemDC.h" />
+    <ClInclude Include="sdk\GridCtrl\TitleTip.h" />
+    <ClInclude Include="SearchSignBox.h" />
+    <ClInclude Include="SetMTextXdataEditor.h" />
+    <ClInclude Include="StdAfx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="JQConfigTool.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

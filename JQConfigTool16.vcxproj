@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>JQConfigTool</ProjectName>
+    <ProjectGuid>{AC9E8397-8903-444E-9E4A-32E2CA1A30B8}</ProjectGuid>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v70</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v70</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>15.0.26419.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\Debug\sys16\</OutDir>
+    <IntDir>..\TMP\Debug\sys16\JQConfigTool\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\Bin\tmp\Sys16\</OutDir>
+    <IntDir>..\TMP\Release\sys16\JQConfigTool\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>E:\code\arx\ObjectARX 2004\inc;$(IncludePath)</IncludePath>
+    <LibraryPath>E:\code\arx\ObjectARX 2004\lib;$(LibraryPath)</LibraryPath>
+    <TargetExt>.arx</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>D:\GOLD_CODE\LIB库文件\objectarx2005\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;JQCONFIGTOOL_MODULE;_AFXEXT;_ACRXAPP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>false</StringPooling>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <WarningLevel>Level1</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)JQConfigTool.arx</OutputFile>
+      <AdditionalLibraryDirectories>D:\GOLD_CODE\LIB库文件\objectARX2005\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <LinkDLL>true</LinkDLL>
+      <ModuleDefinitionFile>JQConfigTool.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)JQConfigTool.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>../Lib/Debug/libVc7/JQConfigTool.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;JQCONFIGTOOL_MODULE;_AFXEXT;_ACRXAPP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <WarningLevel>Level1</WarningLevel>
+      <DebugInformationFormat />
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)JQConfigTool.arx</OutputFile>
+      <LinkDLL>true</LinkDLL>
+      <ModuleDefinitionFile>JQConfigTool.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ProgramDatabaseFile />
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>../Lib/Release/libVc7/JQConfigTool.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <PostBuildEvent>
+      <Command>copy /y "$(TargetPath)" "$(TargetDir)..\..\打包文件\Sys16\$(TargetFileName)"
+rd /Q /S "$(TargetDir).."</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="acrxEntryPoint.cpp" />
+    <ClCompile Include="AddCatalogBodyAttrs.cpp" />
+    <ClCompile Include="AddRoleSignBox.cpp" />
+    <ClCompile Include="ArchiveAllFonts.cpp" />
+    <ClCompile Include="BaseGridEditor.cpp" />
+    <ClCompile Include="DocData.cpp" />
+    <ClCompile Include="EditConfigToolSettings.cpp" />
+    <ClCompile Include="JQConfigTool.cpp" />
+    <ClCompile Include="MultiRenameSymbolRecord.cpp" />
+    <ClCompile Include="MultiSearchAndEditMText.cpp" />
+    <ClCompile Include="MultiTransTextToMText.cpp" />
+    <ClCompile Include="sdk\GoldTools\GAttrMgr.cpp" />
+    <ClCompile Include="sdk\GoldTools\GCharSet.cpp" />
+    <ClCompile Include="sdk\GoldTools\GGeometry.cpp" />
+    <ClCompile Include="sdk\GoldTools\GLayer.cpp" />
+    <ClCompile Include="sdk\GoldTools\GPath.cpp" />
+    <ClCompile Include="sdk\GridCtrl\GridCell.cpp" />
+    <ClCompile Include="sdk\GridCtrl\GridCellBase.cpp" />
+    <ClCompile Include="sdk\GridCtrl\GridCellButton.cpp" />
+    <ClCompile Include="sdk\GridCtrl\GridCellCheck.cpp" />
+    <ClCompile Include="sdk\GridCtrl\GridCellCombo.cpp" />
+    <ClCompile Include="sdk\GridCtrl\GridCellDateTime.cpp" />
+    <ClCompile Include="sdk\GridCtrl\GridCellNumeric.cpp" />
+    <ClCompile Include="sdk\GridCtrl\GridCtrl.cpp" />
+    <ClCompile Include="sdk\GridCtrl\GridDropTarget.cpp" />
+    <ClCompile Include="sdk\GridCtrl\InPlaceEdit.cpp" />
+    <ClCompile Include="sdk\GridCtrl\TitleTip.cpp" />
+    <ClCompile Include="SearchSignBox.cpp" />
+    <ClCompile Include="SetMTextXdataEditor.cpp" />
+    <ClCompile Include="StdAfx.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="JQConfigTool.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AddCatalogBodyAttrs.h" />
+    <ClInclude Include="AddRoleSignBox.h" />
+    <ClInclude Include="ArchiveAllFonts.h" />
+    <ClInclude Include="BaseGridEditor.h" />
+    <ClInclude Include="DocData.h" />
+    <ClInclude Include="EditConfigToolSettings.h" />
+    <ClInclude Include="MultiRenameSymbolRecord.h" />
+    <ClInclude Include="MultiSearchAndEditMText.h" />
+    <ClInclude Include="MultiTransTextToMText.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="sdk\GoldTools\GAttrMgr.h" />
+    <ClInclude Include="sdk\GoldTools\GCharSet.h" />
+    <ClInclude Include="sdk\GoldTools\GGeometry.h" />
+    <ClInclude Include="sdk\GoldTools\GLayer.h" />
+    <ClInclude Include="sdk\GoldTools\GLockDocument.h" />
+    <ClInclude Include="sdk\GoldTools\GPath.h" />
+    <ClInclude Include="sdk\GridCtrl\CellRange.h" />
+    <ClInclude Include="sdk\GridCtrl\GridCell.h" />
+    <ClInclude Include="sdk\GridCtrl\GridCellBase.h" />
+    <ClInclude Include="sdk\GridCtrl\GridCellButton.h" />
+    <ClInclude Include="sdk\GridCtrl\GridCellCheck.h" />
+    <ClInclude Include="sdk\GridCtrl\GridCellCombo.h" />
+    <ClInclude Include="sdk\GridCtrl\GridCellDateTime.h" />
+    <ClInclude Include="sdk\GridCtrl\GridCellNumeric.h" />
+    <ClInclude Include="sdk\GridCtrl\GridCtrl.h" />
+    <ClInclude Include="sdk\GridCtrl\GridDropTarget.h" />
+    <ClInclude Include="sdk\GridCtrl\InPlaceEdit.h" />
+    <ClInclude Include="sdk\GridCtrl\MemDC.h" />
+    <ClInclude Include="sdk\GridCtrl\TitleTip.h" />
+    <ClInclude Include="SearchSignBox.h" />
+    <ClInclude Include="SetMTextXdataEditor.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="JQConfigTool.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

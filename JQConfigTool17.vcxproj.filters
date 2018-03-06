@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{52000397-5fc3-4ef2-abe1-2e6999bce971}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;idl;odl</Extensions>
+    </Filter>
+    <Filter Include="Include Files">
+      <UniqueIdentifier>{5a2f6ce9-e946-49c0-862c-316aea1d007b}</UniqueIdentifier>
+      <Extensions>h;hh;hxx</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{53074b33-e196-4747-8999-a8efd3aeb794}</UniqueIdentifier>
+      <Extensions>rc;ico;bmp;cur;jpg;gif</Extensions>
+    </Filter>
+    <Filter Include="Miscellaneous Files">
+      <UniqueIdentifier>{0b595236-5997-46a0-a3cd-fe8ed22abef2}</UniqueIdentifier>
+      <Extensions>reg;rgs;mak;clw;vsdir;vsz;css;inf;vcproj;csproj</Extensions>
+    </Filter>
+    <Filter Include="GoldTools">
+      <UniqueIdentifier>{22306e71-1127-4785-9462-5d3c7063d6af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GridCtrl">
+      <UniqueIdentifier>{c718ae55-1851-4dc0-b26b-71de5abe5aac}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="acrxEntryPoint.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AddCatalogBodyAttrs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AddRoleSignBox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ArchiveAllFonts.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseGridEditor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DocData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EditConfigToolSettings.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JQConfigTool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MultiRenameSymbolRecord.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MultiSearchAndEditMText.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MultiTransTextToMText.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SearchSignBox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SetMTextXdataEditor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\GoldTools\GAttrMgr.cpp">
+      <Filter>GoldTools</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\GoldTools\GCharSet.cpp">
+      <Filter>GoldTools</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\GoldTools\GGeometry.cpp">
+      <Filter>GoldTools</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\GoldTools\GLayer.cpp">
+      <Filter>GoldTools</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\GoldTools\GPath.cpp">
+      <Filter>GoldTools</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\GridCtrl\GridCell.cpp">
+      <Filter>GridCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\GridCtrl\GridCellBase.cpp">
+      <Filter>GridCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\GridCtrl\GridCellButton.cpp">
+      <Filter>GridCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\GridCtrl\GridCellCheck.cpp">
+      <Filter>GridCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\GridCtrl\GridCellCombo.cpp">
+      <Filter>GridCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\GridCtrl\GridCellDateTime.cpp">
+      <Filter>GridCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\GridCtrl\GridCellNumeric.cpp">
+      <Filter>GridCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\GridCtrl\GridCtrl.cpp">
+      <Filter>GridCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\GridCtrl\GridDropTarget.cpp">
+      <Filter>GridCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\GridCtrl\InPlaceEdit.cpp">
+      <Filter>GridCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\GridCtrl\TitleTip.cpp">
+      <Filter>GridCtrl</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AddCatalogBodyAttrs.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AddRoleSignBox.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ArchiveAllFonts.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseGridEditor.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DocData.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EditConfigToolSettings.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MultiRenameSymbolRecord.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MultiSearchAndEditMText.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MultiTransTextToMText.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SearchSignBox.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SetMTextXdataEditor.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\GoldTools\GAttrMgr.h">
+      <Filter>GoldTools</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\GoldTools\GCharSet.h">
+      <Filter>GoldTools</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\GoldTools\GGeometry.h">
+      <Filter>GoldTools</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\GoldTools\GLayer.h">
+      <Filter>GoldTools</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\GoldTools\GLockDocument.h">
+      <Filter>GoldTools</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\GoldTools\GPath.h">
+      <Filter>GoldTools</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\GoldTools\StdAfx.h">
+      <Filter>GoldTools</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\GridCtrl\CellRange.h">
+      <Filter>GridCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\GridCtrl\GridCell.h">
+      <Filter>GridCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\GridCtrl\GridCellBase.h">
+      <Filter>GridCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\GridCtrl\GridCellButton.h">
+      <Filter>GridCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\GridCtrl\GridCellCheck.h">
+      <Filter>GridCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\GridCtrl\GridCellCombo.h">
+      <Filter>GridCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\GridCtrl\GridCellDateTime.h">
+      <Filter>GridCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\GridCtrl\GridCellNumeric.h">
+      <Filter>GridCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\GridCtrl\GridCtrl.h">
+      <Filter>GridCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\GridCtrl\GridDropTarget.h">
+      <Filter>GridCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\GridCtrl\InPlaceEdit.h">
+      <Filter>GridCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\GridCtrl\MemDC.h">
+      <Filter>GridCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\GridCtrl\StdAfx.h">
+      <Filter>GridCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\GridCtrl\TitleTip.h">
+      <Filter>GridCtrl</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="JQConfigTool.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
